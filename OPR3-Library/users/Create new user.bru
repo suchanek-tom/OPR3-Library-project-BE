@@ -6,8 +6,24 @@ meta {
 
 post {
   url: http://localhost:8080/api/users
-  body: none
+  body: json
   auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Admin",
+    "surname": "User",
+    "email": "admin@example.com",
+    "password": "admin123",
+    "address": "123 Admin Street",
+    "city": "Columbus",
+    "role": "ROLE_ADMIN"
+  }
 }
 
 settings {
