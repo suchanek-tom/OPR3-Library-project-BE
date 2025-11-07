@@ -1,4 +1,4 @@
-2025-11-06 22:20:16.208999+01:00 database: flush
+2025-11-07 20:58:33.860448+01:00 database: flush
 org.h2.message.DbException: Obecná chyba: "org.h2.mvstore.MVStoreException: The file is locked: /Users/tsuchanek/Documents/OSU/7OPR3/Library-system-R23171/library/data/librarydb.mv.db [2.3.232/7]"
 General error: "org.h2.mvstore.MVStoreException: The file is locked: /Users/tsuchanek/Documents/OSU/7OPR3/Library-system-R23171/library/data/librarydb.mv.db [2.3.232/7]" [50000-232]
 	at org.h2.message.DbException.get(DbException.java:212)
