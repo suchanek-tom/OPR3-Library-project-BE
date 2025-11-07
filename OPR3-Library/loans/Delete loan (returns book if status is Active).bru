@@ -1,0 +1,15 @@
+meta {
+  name: Delete loan (returns book if status is Active)
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:8080/api/loans/{id}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Update book
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/api/books/{id}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
