@@ -54,7 +54,15 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");
         }
 
-        return ResponseEntity.ok(new LoginResponse(user.getId(), user.getEmail(), user.getName()));
+        return ResponseEntity.ok(new LoginResponse(
+            user.getId(),
+            user.getName(),
+            user.getSurname(),
+            user.getEmail(),
+            user.getAddress(),
+            user.getCity(),
+            user.getRole()
+        ));
     }
 
     // GET user by ID
